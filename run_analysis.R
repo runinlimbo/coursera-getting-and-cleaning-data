@@ -190,6 +190,8 @@ BY_VARS <-
 TIDY_MEANS <- BY_VARS %>% summarize_if(is.numeric,mean) # Ignores the SET Variable
 names(TIDY_MEANS) # Excludes SET
 nrow(TIDY_MEANS) #180
+setwd("~/Documents/DataScience/Course 3/Programming Assignment")
+write.table(TIDY_MEANS,"TIDY_MEANS.txt",row.names = FALSE )
 # TIDY_MEANS COMPLETE #
 #-----------------------------------------------------------------#
 #-----------------------------------------------------------------#
